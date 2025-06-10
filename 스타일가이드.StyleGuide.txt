@@ -1,0 +1,25 @@
+*Style Guide
+
+1. Color
+  1) Main Color(주조색): Green: #117302, #37A603, #67BC04
+  2) Sub Color(보조색): Blue: #0669BF, #0788D9 / Orange: #F2CB05, #F2B705
+
+2. Font
+  1) 페이지 타이틀 : font-family: 'NanumSquareNeoHeavy'
+  2) 섹션 타이틀 : font-family: 'MaruBuriBold';
+  3) 본문 : font-family: 'NanumSquareNeo';
+
+*웹폰트 리스트
+<link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
+font-family: 'NanumSquareNeoLight';
+font-family: 'NanumSquareNeo';
+font-family: 'NanumSquareNeoBold';
+font-family: 'NanumSquareNeoExtraBold';
+font-family: 'NanumSquareNeoHeavy';
+
+<link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
+font-family: 'MaruBuriExtraLight';
+font-family: 'MaruBuriLight';
+font-family: 'MaruBuri';
+font-family: 'MaruBuriBold';
+font-family: 'MaruBuriSemiBold';
