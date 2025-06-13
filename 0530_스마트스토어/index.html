@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트 스토어</title>
+
+    <!-- 네이버 웹폰트 연결(나눔스퀘어 네오) -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
+
+    <!-- 폰트어썸 연결 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+
+    <style>
+
+        * {    /*공통 사항*/
+            font-family: 'NanumSquareNeo';
+            box-sizing: border-box; margin: 0;
+        }
+
+        ul { list-style: none; padding: 0; }
+
+        #ranking {    /*섹션 영역*/
+            width: 100%; max-width: 1200px;
+            margin: 100px auto;
+        }
+
+        .sectionTitle {     /*섹션 제목*/
+            font-size: 2em; margin: 1em 0;
+            text-align: center;
+        }
+
+        #listBox {     /*리스트박스 ul*/
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        } 
+
+        .list { }    /*4등분 각 리스트*/
+
+        .imageBox {   /*상품 이미지용 박스*/
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            position: relative;     /*여기에 내용 맞추기*/
+        } 
+        .picture {    /*상품 이미지*/
+            width: 100%; display: block;
+            transition: 0.3s;
+        }
+        .no {    /*베스트 넘버 아이콘 이미지*/
+            position: absolute;  top: 0; left: 20px;
+            width: 15%;
+        }
+
+        .list:hover .picture { transform: scale(1.05); }
+
+        .title {     /*상품 제목 문자*/
+            margin-bottom: 10px;
+        }
+        .text {     /*상품 소개글*/
+            font-size: 0.9em; color: #333;
+            line-height: 1.5em;
+            margin-bottom: 20px;
+        }
+        .price {     /*판매 가격*/
+            font-size: 1.3em; color: #c00;
+            display: inline-block;
+        }
+        .price2 {    /*할인 전 가격*/
+            color: #999;  font-size: 0.9em;
+            text-decoration: line-through;
+            display: inline-block;
+        } 
+
+        .iconBox {
+            position: absolute;
+            bottom: 10%; left: 0;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transition: 0.3s;
+        }
+        .icon {
+            color: #fff;
+            font-size: 2em;
+            margin: 0 5px;
+        }
+        .list:hover .iconBox { opacity: 1;}
+
+
+    </style>
+
+</head>
+
+
+<body>
+    
+    <section id="ranking">
+
+        <h2 class="sectionTitle">주간 RANKING</h2>
+
+        <ul id="listBox">
+            <li class="list">
+                <div class="imageBox">
+                    <img src="images/image1.jpg" alt="셀레나 결혼식 하객 원피스" class="picture">
+                    <img src="images/01.png" alt="베스트1" class="no">
+                    <div class="iconBox">
+                        <i class="fa-solid fa-heart icon"></i>
+                        <i class="fa-solid fa-circle-plus icon"></i>
+                    </div>
+                </div>
+                <h3 class="title">[clearance sale2] 썸머 버클 나시 세트</h3>    <!--제목-->
+                <p class="text">✔ 여름에 예쁘고 편하게 착용할 수 있는 니트 제품 소개해드려요. </p>       <!--제품설명-->
+                <h3 class="price">20,400원</h3>   <!--할인가격-->
+                <p class="price2">34,000원</p>    <!--원래가격-->
+            </li>
+            
+            <li class="list">
+                <div class="imageBox">
+                    <img src="images/image2.jpg" alt="[clearance sale] 꾸안꾸 맥시 카라 원피스" class="picture">
+                    <img src="images/02.png" alt="베스트1" class="no">
+                    <div class="iconBox">
+                        <i class="fa-solid fa-heart icon"></i>
+                        <i class="fa-solid fa-circle-plus icon"></i>
+                    </div>
+                
+                </div>
+                <h3 class="title">[clearance sale] 꾸안꾸 맥시 카라 원피스</h3>    <!--제목-->
+                <p class="text">✔ 제가 요즘 마실룩으로 자주 입고나가는 원피스 소개해드려요.</p>       <!--제품설명-->
+                <h3 class="price">32,940원</h3>   <!--할인가격-->
+                <p class="price2">54,900원</p>    <!--원래가격-->
+            </li>
+            
+            <li class="list">
+                <div class="imageBox">
+                    <img src="images/image3.jpg" alt="[clearance sale2] [수입] high quality 미우 탑 블라우스" class="picture">
+                    <img src="images/03.png" alt="베스트1" class="no">
+                    <div class="iconBox">
+                        <i class="fa-solid fa-heart icon"></i>
+                        <i class="fa-solid fa-circle-plus icon"></i>
+                    </div>
+                
+                </div>
+                <h3 class="title">[clearance sale2] [수입] high quality 미우 탑 블라우스</h3>    <!--제목-->
+                <p class="text">✔ 입었을 때 정말 고급스러우면서 시원하고 편하게 착용가능했던 블라우스 소개해드려요.</p>       <!--제품설명-->
+                <h3 class="price">24,600원</h3>   <!--할인가격-->
+                <p class="price2">41,000원</p>    <!--원래가격-->
+            </li>
+
+            <li class=d:\공유폴더\2025.02.21_(산대특)_생성형AI(머신러닝)를 활용한 디지털문화콘텐츠제작_육성\웹퍼블리싱\0602_CSS_Hover_SK"list">
+                <div class="imageBox">
+                    <img src="images/image4.jpg" alt="[clearance sale] 프리미엄 사가폭스 하프패딩 숏패딩" class="picture">
+                    <img src="images/04.png" alt="베스트1" class="no">
+                    <div class="iconBox">
+                        <i class="fa-solid fa-heart icon"></i>
+                        <i class="fa-solid fa-circle-plus icon"></i>
+                    </div>
+                
+                </div>
+                <h3 class="title">[clearance sale] 프리미엄 사가폭스 하프패딩 숏패딩</h3>    <!--제목-->
+                <p class="text">거래처에서 설정한 권장판매가에서 최저가격으로 공구중인 제품입니다</p>       <!--제품설명-->
+                <h3 class="price">198,000원</h3>   <!--할인가격-->
+                <p class="price2">396,000원</p>    <!--원래가격-->
+            </li>
+
+        </ul>
+
+    </section>
+
+
+</body>
+
+    
+
+</html>
