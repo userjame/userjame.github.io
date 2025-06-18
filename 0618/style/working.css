@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* working.html 페이지용 스타일 */
+
+#listBox {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.videoBox  {
+    width: 100%; height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}

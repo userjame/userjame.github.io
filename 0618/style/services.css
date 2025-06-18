@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* services.html 페이지용 스타일 */
+
+#listBox {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.list > img { 
+    width: 100%; display: block;
+    margin-bottom: 0.5rem;
+}

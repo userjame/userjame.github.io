@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mashup</title>
+
+    <!-- 네이버 웹폰트 연결(나눔스퀘어) -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+
+    <!-- 폰트어썸 연결 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+
+    <!-- 구글 아이콘 연결 -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0" />
+
+    <!-- 공통 스타일 연결 -->
+     <link rel="stylesheet" href="style/common.css">
+
+     <!-- 현재 페이지 스타일 연결 -->
+      <link rel="stylesheet" href="style/working.css">
+
+</head>
+
+
+<body>
+
+    <div id="topBox">    <!--모바일 화면에서 상단에 고정되는 박스-->
+        <span class="material-symbols-outlined" id="hamburger">apps</span>
+        <img src="images/mashup-logo.svg" alt="로고 이미지" id="logoTop">
+        <h1 id="titleTop">Mashup Information</h1>
+    </div>
+
+    <div id="leftBox">    <!--왼쪽 고정 박스(헤더,내비,푸터)-->
+
+        <header id="header">
+            <a href="index.html"><img src="images/mashup-logo.svg" alt="로고 이미지" id="logo"></a>
+            <h1 id="title1">Mashup Information</h1>
+            <p id="title2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, nisi.</p>
+        </header>
+
+
+        <nav id="navi">
+            <ul id="menu">
+                <li class="main"><a href="index.html" class="mainLink"><span class="material-symbols-outlined menuIcon">arrow_outward</span>HOME</a></li>
+                <li class="main"><a href="about.html" class="mainLink"><span class="material-symbols-outlined menuIcon">arrow_outward</span>ABOUT</a></li>
+                <li class="main"><a href="services.html" class="mainLink"><span class="material-symbols-outlined menuIcon">arrow_outward</span>SERVICES</a></li>
+                <li class="main"><a href="contact.html" class="mainLink"><span class="material-symbols-outlined menuIcon">arrow_outward</span>CONTACT US</a></li>
+                <li class="main"><a href="working.html" class="mainLink"><span class="material-symbols-outlined menuIcon">arrow_outward</span>WORKING</a></li>
+            </ul>
+        </nav>
+
+
+        <footer id="footer">
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <p>© Company name | Website created with Mashup Template/Unsplash</p>
+        </footer>
+
+    </div>    <!--왼쪽 고정 박스(헤더,내비,푸터)-->
+
+
+
+    <section id="sec">     <!--오른쪽 섹션 영역-->
+
+        <h2 class="sectionTitle">Working</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <ul id="listBox">
+                <li class="list">
+                    <div class="videoBox">
+                        <iframe class="video" width="640" height="360" src="https://www.youtube.com/embed/vaj2TSPe5_4?enablejsapi=1&version=2&playerapiid=ytplayer&controls=1&autoplay=0&mute=0&playsinline=1&loop=1&showinfo=0&rel=0&vq=hd1080&wmode=opaque&autohide=1&volume=0&playlist=vaj2TSPe5_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="smallTitle">Making Video 1</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sit quas provident maiores alias eaque.</p>
+                    <button class="get"><span class="material-symbols-outlined">login</span>Get In Touch</button>
+                </li>
+                <li class="list">
+                    <div class="videoBox">
+                        <iframe class="video" width="640" height="360" src="https://www.youtube.com/embed/epcs0w5utp8?enablejsapi=1&version=2&playerapiid=ytplayer&controls=1&autoplay=0&mute=0&playsinline=1&loop=1&showinfo=0&rel=0&vq=hd1080&wmode=opaque&autohide=1&volume=0&playlist=epcs0w5utp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="smallTitle">Making Video 2</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sit quas provident maiores alias eaque.</p>
+                    <button class="get"><span class="material-symbols-outlined">login</span>Get In Touch</button>
+                </li>
+                <li class="list">
+                    <div class="videoBox">
+                        <iframe class="video" width="640" height="360" src="https://www.youtube.com/embed/leshgMq5Wbs?enablejsapi=1&version=2&playerapiid=ytplayer&controls=1&autoplay=0&mute=0&playsinline=1&loop=1&showinfo=0&rel=0&vq=hd1080&wmode=opaque&autohide=1&volume=0&playlist=leshgMq5Wbs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="smallTitle">Making Video 3</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sit quas provident maiores alias eaque.</p>
+                    <button class="get"><span class="material-symbols-outlined">login</span>Get In Touch</button>
+                </li>
+            </ul>
+    </section>     <!--오른쪽 섹션 영역-->
+
+</body>
+
+    
+
+</html>
